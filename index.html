@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/welcome.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- form-container wraps around everything -->
+    <section class="form-container flex flex-center relative">
+      <div class="form-area in relative">
+        <div class="background absolute"></div>
+        <div class="form-wrap flex absolute flex-center">
+          <!--form-wrap wraps around the form-->
+          <div class="form sign-up-form flex flex-column flex-center absolute">
+            <!-- Sign-Up-Form wraps around the form that helps you to create a new account! -->
+            <h2 class="heading">Create an account</h2>
+            <p class="message">Continue with</p>
+            <span class="social-icons block">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-google"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </span>
+            <p class="message">or sign up with email</p>
+            <input
+              class="input transparent"
+              id="username"
+              type="text"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              class="input transparent"
+              id="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              class="input transparent"
+              id="password"
+              type="password"
+              placeholder="Create Password"
+              required
+            />
+            <input
+              class="input transparent"
+              id="password2"
+              type="password"
+              placeholder="Confirm Password"
+              required
+            />
+            <button id="submit-btn" type="submit" class="btn btn-primary">
+              Sign Up
+            </button>
+          </div>
+          <div class="form sign-in-form flex flex-center flex-column absolute">
+            <!-- Sign-In-Form wraps around the form that continue from where you left off! -->
+            <h2 class="heading">Sign In</h2>
+            <p class="message">Continue with</p>
+            <span class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-google"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </span>
+            <p class="message">or sign in with email</p>
+            <input
+              class="input transparent"
+              id="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              class="input transparent"
+              id="password"
+              type="password"
+              placeholder="Enter Password"
+              required
+            />
+            <button id="submit-btn" type="submit" class="btn btn-primary">
+              Sign In
+            </button>
+          </div>
+        </div>
+        <div class="welcome-message relative">
+          <!--welcome-message wraps around the message-->
+          <div class="sign-up-message absolute flex flex-center flex-column">
+            <h2 class="heading">New Here?</h2>
+            <p class="message">Create an account</p>
+            <button class="btn btn-primary btn-transparent" id="sign-up-btn">
+              Sign Up
+            </button>
+          </div>
+
+          <div class="sign-in-message absolute flex flex-center flex-column">
+            <h2 class="heading">Welcome Back!</h2>
+            <p class="message">Continue from where you left off</p>
+            <button id="sign-in-btn" class="btn btn-primary btn-transparent">
+              Sign In
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <i class="fa-brands fa-facebook"></i> -->
+<!-- <i class="fa-brands fa-google"></i> -->
+<!-- <i class="fa-brands fa-facebook-f"></i> -->
+<!-- <i class="fa-brands fa-linkedin-in"></i> -->
